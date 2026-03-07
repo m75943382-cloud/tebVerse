@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovEdu - Premium Educational Infrastructure</title>
-    <!-- Fonts: Inter (EN) and Cairo (AR) -->
+    <meta name="description" content="NovEdu — البنية التحتية المميزة لكورسك الرقمي. أمان شامل، ستريمنج ثابت، تحصيل، تشغيل، حوكمة فريق، تقارير.">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,10 +12,16 @@
     <!-- Background Elements -->
     <div class="bg-gradient bg-blob-1"></div>
     <div class="bg-gradient bg-blob-2"></div>
+    <div class="bg-gradient bg-blob-3"></div>
     
     <header class="navbar container">
         <div class="logo">
-            <span class="logo-icon">💠</span> NovEdu
+            <svg class="logo-svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="8" fill="url(#logoGrad)"/>
+                <path d="M10 22V10l6 4-6 4zm7-8l5 4-5 4V14z" fill="#fff"/>
+                <defs><linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#58a6ff"/><stop offset="1" stop-color="#1f6feb"/></linearGradient></defs>
+            </svg>
+            <span>NovEdu</span>
         </div>
         <div class="nav-controls">
             <button id="lang-toggle" class="btn-outline">English</button>
@@ -35,10 +41,12 @@
                         <h3 data-i18n="stat_1_val">7+</h3>
                         <p data-i18n="stat_1_lbl">سنين خبرة</p>
                     </div>
+                    <div class="stat-divider"></div>
                     <div class="stat">
                         <h3 data-i18n="stat_2_val">30,000+</h3>
                         <p data-i18n="stat_2_lbl">متعلم</p>
                     </div>
+                    <div class="stat-divider"></div>
                     <div class="stat">
                         <h3 data-i18n="stat_3_val">1,000,000+</h3>
                         <p data-i18n="stat_3_lbl">ساعة مشاهدة</p>
@@ -57,10 +65,15 @@
             <div class="partners">
                 <p data-i18n="partners_title">شركات رسمية مع نقابة اطباء الشرقية و كلية طب الزقازيق و اكاديمية السادات و العديد من المؤسسات المعتمدة</p>
                 <div class="partner-logos">
-                    <!-- placeholders for logos -->
-                    <div class="p-logo">🏛️</div>
-                    <div class="p-logo">🩺</div>
-                    <div class="p-logo">🎓</div>
+                    <div class="p-logo">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-4h6v4M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg>
+                    </div>
+                    <div class="p-logo">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.8 2.3A.3.3 0 105 2H4a2 2 0 00-2 2v5a6 6 0 006 6v0a6 6 0 006-6V4a2 2 0 00-2-2h-1a.2.2 0 10.3.3"/><path d="M8 15v1a6 6 0 006 6v0a6 6 0 006-6v-4"/><path d="M22 10l-4-2 4-2"/></svg>
+                    </div>
+                    <div class="p-logo">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
                 </div>
             </div>
         </section>
@@ -73,39 +86,51 @@
             </div>
             
             <div class="grid cards-grid">
-                <div class="glass-card feature-card">
-                    <div class="icon-wrap warning">⚠️</div>
+                <div class="glass-card feature-card anim-item">
+                    <div class="icon-wrap warning">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    </div>
                     <h4 data-i18n="pain_1_title">وقت الزحمة الفيديو بيقطع</h4>
                     <p data-i18n="pain_1_desc">شكاوى جماعية → نقل من المنصة نبدا من الاول تاني</p>
                 </div>
-                <div class="glass-card feature-card">
-                    <div class="icon-wrap warning">🔓</div>
+                <div class="glass-card feature-card anim-item">
+                    <div class="icon-wrap warning">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 019.9-1"/></svg>
+                    </div>
                     <h4 data-i18n="pain_2_title">المحتوى بيتسرّب</h4>
                     <p data-i18n="pain_2_desc">تضطر تقلل السعر → هامش ربح أقل</p>
                 </div>
-                <div class="glass-card feature-card">
-                    <div class="icon-wrap warning">👥</div>
+                <div class="glass-card feature-card anim-item">
+                    <div class="icon-wrap warning">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
                     <h4 data-i18n="pain_3_title">الحسابات بتتشارك</h4>
                     <p data-i18n="pain_3_desc">بين أكثر من شخص على التلجرام وغيره = الاشتراك يفقد قيمته</p>
                 </div>
-                <div class="glass-card feature-card">
-                    <div class="icon-wrap warning">⚙️</div>
+                <div class="glass-card feature-card anim-item">
+                    <div class="icon-wrap warning">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                    </div>
                     <h4 data-i18n="pain_4_title">تفعيل واشتراكات يدوي</h4>
                     <p data-i18n="pain_4_desc">فوضى وأخطاء بشرية</p>
                 </div>
-                <div class="glass-card feature-card">
-                    <div class="icon-wrap warning">💰</div>
+                <div class="glass-card feature-card anim-item">
+                    <div class="icon-wrap warning">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                    </div>
                     <h4 data-i18n="pain_5_title">مستحقات غير واضحة</h4>
                     <p data-i18n="pain_5_desc">تسعير غلط ومشاكل في الحسابات</p>
                 </div>
-                <div class="glass-card feature-card">
-                    <div class="icon-wrap warning">⏳</div>
+                <div class="glass-card feature-card anim-item">
+                    <div class="icon-wrap warning">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
                     <h4 data-i18n="pain_6_title">دعم ضعيف</h4>
                     <p data-i18n="pain_6_desc">الطلبة بتستنى أيام للرد، وده بيستهلك وقتك ومجهودك</p>
                 </div>
             </div>
             
-            <div class="alert-box glass-card mt-4 text-center">
+            <div class="alert-box glass-card mt-4 text-center anim-item">
                 <p data-i18n="pain_conclusion">أنت بتشترك عشان <strong>خطورة ↓ عائد استثماري ↑</strong> مش عشان شكل المنصة ولا عشان السعر.</p>
             </div>
         </section>
@@ -117,7 +142,7 @@
                 <p data-i18n="core_desc">تطبيق NovEdu بيوفرلك البنية التحتية لكورسك مش مجرد تطبيق . ده نظام تشغيل كامل يشيل عنك التشغيل ويقفل سلة المخاطر.</p>
             </div>
             
-            <div class="core-standard glass-card highlight-card">
+            <div class="core-standard glass-card highlight-card anim-item">
                 <h3 data-i18n="core_premium">Core Premium Standard <span class="badge-inline" data-i18n="core_badge">ثابت لكل العملاء</span></h3>
                 <ul class="check-list">
                     <li data-i18n="core_list_1">أمان شامل: تطبيق + سيرفر + طالب، مع طبقات تقلل التسريب</li>
@@ -134,7 +159,7 @@
         <!-- 4) Automation Section -->
         <section id="automation" class="container">
             <div class="split-layout">
-                <div class="split-text">
+                <div class="split-text anim-item">
                     <h2 data-i18n="auto_title">تنظيم المحتوى والجدولة (Automation)</h2>
                     <h3 class="highlight" data-i18n="auto_subtitle">ارفع مرة… والسيستم يشتغل لوحده.</h3>
                     <ul class="feature-list">
@@ -144,8 +169,11 @@
                         <li data-i18n="auto_list_4">تجربة طالب منضبطة وثابتة بدل فوضى لينكات وجروبات</li>
                     </ul>
                 </div>
-                <div class="split-visual glass-card visual-card">
-                    <div class="mockup folder-view">Folders / Modules View</div>
+                <div class="split-visual glass-card visual-card anim-item">
+                    <div class="mockup folder-view">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+                        <span>Folders / Modules View</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -153,7 +181,7 @@
         <!-- 5) Content Security -->
         <section id="security" class="container">
             <div class="split-layout reverse pt-4">
-                <div class="split-text">
+                <div class="split-text anim-item">
                     <h2 class="gradient-text" data-i18n="sec_title">Content Security (Selling Point الأساسي)</h2>
                     <p data-i18n="sec_desc">حماية فعلية تمنع التسريب وتقلل Surface Area بدل وعود عامة.</p>
                     <ul class="feature-list grid-list">
@@ -169,8 +197,11 @@
                         <strong data-i18n="sec_result">النتيجة:</strong> <span data-i18n="sec_result_text">تسريب أقل = ضغط أقل على التسعير = هامش أعلى وثقة أعلى في البيع.</span>
                     </div>
                 </div>
-                <div class="split-visual glass-card visual-card">
-                    <div class="mockup security-shield">🛡️ Secure Player Mockup</div>
+                <div class="split-visual glass-card visual-card anim-item">
+                    <div class="mockup security-shield">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4" stroke="var(--success)" stroke-width="2"/></svg>
+                        <span>Secure Player</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -178,7 +209,7 @@
         <!-- 6 & 7) Governance & SLA -->
         <section id="gov-sla" class="container">
             <div class="grid cards-grid-2">
-                <div class="glass-card">
+                <div class="glass-card anim-item">
                     <h2 data-i18n="gov_title">التحكم في الطلبة + الحوكمة</h2>
                     <p class="highlight" data-i18n="gov_subtitle">إنت صاحب القرار. مش المنصة.</p>
                     <ul class="circle-list">
@@ -189,9 +220,11 @@
                         <li data-i18n="gov_list_5">صلاحيات فريق متعددة + سجل تغييرات يقلل أخطاء الوصول وسوء الاستخدام</li>
                     </ul>
                 </div>
-                <div class="glass-card sla-card">
+                <div class="glass-card sla-card anim-item">
                     <h2 data-i18n="sla_title">الثبات وقت الذروة + الدعم (SLA)</h2>
-                    <div class="sla-icon">⚡</div>
+                    <div class="sla-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
                     <p data-i18n="sla_desc">ثبات الذروة جزء من Core Premium Standard الفرق الحقيقي بين الباقات هو تغطية التشغيل والتحصيل و الخدمات الاخري لكن ثبات البث و الامان هم الجزا الاهم لنا</p>
                 </div>
             </div>
@@ -204,7 +237,7 @@
 
             <div class="pricing-grid mt-4">
                 <!-- Rev Share -->
-                <div class="glass-card price-plan">
+                <div class="glass-card price-plan anim-item">
                     <span class="plan-type" data-i18n="plan_1_type">أ) نموذج مرتبط بالنمو (Revenue Share)</span>
                     <h3 data-i18n="plan_1_name">12% — Core Secure</h3>
                     <ul class="plan-features">
@@ -213,7 +246,7 @@
                     </ul>
                 </div>
                 
-                <div class="glass-card price-plan recommended">
+                <div class="glass-card price-plan recommended anim-item">
                     <div class="ribbon" data-i18n="ribbon_rec">Recommended</div>
                     <span class="plan-type" data-i18n="plan_2_type">أ) نموذج مرتبط بالنمو (Revenue Share)</span>
                     <h3 data-i18n="plan_2_name">16% — Pro Operated</h3>
@@ -227,7 +260,7 @@
                 </div>
 
                 <!-- PAYG -->
-                <div class="glass-card price-plan">
+                <div class="glass-card price-plan anim-item">
                     <span class="plan-type" data-i18n="plan_3_type">ب) نموذج شفاف التكلفة (PAYG)</span>
                     <h3 data-i18n="plan_3_name">8 جنيه/طالب/شهر</h3>
                     <p class="traffic-addon" data-i18n="plan_3_addon">+ تكلفة ترافيك حسب المشاهدة.</p>
@@ -237,8 +270,8 @@
                 </div>
             </div>
 
-            <div class="decision-box glass-card mt-3 text-left rtl-text-right">
-                <h4 data-i18n="dec_title">💡 قاعدة اختيار سريعة:</h4>
+            <div class="decision-box glass-card mt-3 text-left rtl-text-right anim-item">
+                <h4 data-i18n="dec_title">قاعدة اختيار سريعة:</h4>
                 <ul>
                     <li data-i18n="dec_1">بتبيع بقوة ومش عايز فاتورة متغيرة ➔ <strong>Revenue Share</strong></li>
                     <li data-i18n="dec_2">عندك عدد طلاب كبير واستهلاك متفاوت وعايز عدالة تكلفة ➔ <strong>PAYG</strong></li>
@@ -249,8 +282,8 @@
         <!-- Target Audience Section -->
         <section class="container mt-5 mb-5">
             <div class="grid cards-grid-2">
-                <div class="glass-card target-card good-fit">
-                    <h3 data-i18n="target_good">✅ لمن هذا مناسب</h3>
+                <div class="glass-card target-card good-fit anim-item">
+                    <h3 data-i18n="target_good">لمن هذا مناسب</h3>
                     <ul>
                         <li data-i18n="tg_1">دكتور أو مالك أكاديمية بتبيع Premium وسمعتك رأس مال</li>
                         <li data-i18n="tg_2">عندك ذروات إطلاق أو ضغط مشاهدة وتخاف من التقطيع</li>
@@ -259,8 +292,8 @@
                         <li data-i18n="tg_5">بتفكر كمستثمر: Risk ↓ + ROI ↑ قبل أي شيء</li>
                     </ul>
                 </div>
-                <div class="glass-card target-card bad-fit">
-                    <h3 data-i18n="target_bad">❌ غير مناسب لو أنت</h3>
+                <div class="glass-card target-card bad-fit anim-item">
+                    <h3 data-i18n="target_bad">غير مناسب لو أنت</h3>
                     <ul>
                         <li data-i18n="tb_1">بتدور على أرخص حل وخلاص</li>
                         <li data-i18n="tb_2">مستعد تقبل تقطيع وتسريب مقابل سعر أقل</li>
@@ -273,11 +306,11 @@
         <section id="faq" class="container">
             <h2 class="text-center" data-i18n="faq_title">الأسئلة الشائعة (بمنطق Risk/ROI)</h2>
             <div class="faq-list mt-3">
-                <div class="faq-item glass-card mb-2">
+                <div class="faq-item glass-card mb-2 anim-item">
                     <h4 data-i18n="faq_1_q">س: الستريمنج ثابت وقت الذروة؟</h4>
                     <p data-i18n="faq_1_a">ج: ثبات الذروة جزء من Core Premium Standard. الفرق بين الباقات هو الخدمات الاضافية مثل الدعم الفني 24 ساعة لمشاكل الطلبة و ايضا لخدمات التحصيل و التفعيل للطلاب</p>
                 </div>
-                <div class="faq-item glass-card">
+                <div class="faq-item glass-card anim-item">
                     <h4 data-i18n="faq_2_q">س: لماذا لا نتعامل مع Google Play؟</h4>
                     <p data-i18n="faq_2_a">ج: التوزيع عبر APK/Huawei/Xiaomi/TestFlight لأن اختيار الأمان أعلى من قيود المتاجر التقليدية.</p>
                 </div>
@@ -287,7 +320,7 @@
 
     <!-- Final CTA Footer -->
     <footer class="footer-cta container text-center mt-5 mb-5">
-        <div class="glass-card highlight-card p-5">
+        <div class="glass-card highlight-card p-5 anim-item">
             <h2 data-i18n="footer_title">اختصر الطريق</h2>
             <p class="mb-3" data-i18n="footer_desc">اختار نموذج دفع يناسبك، وخد Core Premium ثابت، وحدد مستوى التغطية التشغيلية اللي يقلل المخاطر عندك.</p>
             <div class="cta-wrap">
