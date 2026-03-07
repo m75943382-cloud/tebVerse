@@ -91,18 +91,18 @@ const translations = {
     plan_3_addon: "+ تكلفة ترافيك حسب المشاهدة.",
     plan_3_obj: "الهدف: شفافية في التكلفة.",
 
-    dec_title: "💡 قاعدة اختيار سريعة:",
+    dec_title: "قاعدة اختيار سريعة:",
     dec_1: "بتبيع بقوة ومش عايز فاتورة متغيرة ➔ <strong>Revenue Share</strong>",
     dec_2: "عندك عدد طلاب كبير واستهلاك متفاوت وعايز عدالة تكلفة ➔ <strong>PAYG</strong>",
 
-    target_good: "✅ لمن هذا مناسب",
+    target_good: "لمن هذا مناسب",
     tg_1: "دكتور أو مالك أكاديمية بتبيع Premium وسمعتك رأس مال",
     tg_2: "عندك ذروات إطلاق أو ضغط مشاهدة وتخاف من التقطيع",
     tg_3: "اتلسعت من حلول رخيصة أو دعم ضعيف",
     tg_4: "عايز تشغيل منضبط بدل فوضى تفعيل واشتراكات",
     tg_5: "بتفكر كمستثمر: Risk ↓ + ROI ↑ قبل أي شيء",
     
-    target_bad: "❌ غير مناسب لو أنت",
+    target_bad: "غير مناسب لو أنت",
     tb_1: "بتدور على أرخص حل وخلاص",
     tb_2: "مستعد تقبل تقطيع وتسريب مقابل سعر أقل",
 
@@ -209,18 +209,18 @@ const translations = {
     plan_3_addon: "+ Traffic cost based on streaming.",
     plan_3_obj: "Goal: Total cost transparency.",
 
-    dec_title: "💡 Quick Decision Rule:",
+    dec_title: "Quick Decision Rule:",
     dec_1: "Selling strongly and don't want a variable bill ➔ <strong>Revenue Share</strong>",
     dec_2: "Large student base with varying consumption, seeking fair cost ➔ <strong>PAYG</strong>",
 
-    target_good: "✅ Who is this for",
+    target_good: "Who is this for",
     tg_1: "Doctor or Academy owner selling Premium where reputation is capital",
     tg_2: "You have launch peaks or high viewership and fear lagging",
     tg_3: "Got burned by cheap solutions or weak support",
     tg_4: "Want disciplined operations instead of activation/subscription chaos",
     tg_5: "Thinking like an investor: Risk ↓ + ROI ↑ above all else",
     
-    target_bad: "❌ Not for you if",
+    target_bad: "Not for you if",
     tb_1: "Just looking for the cheapest solution",
     tb_2: "Willing to accept lagging and leaks for a lower price",
 
