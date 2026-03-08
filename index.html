@@ -16,11 +16,7 @@
     
     <header class="navbar container">
         <div class="logo">
-            <svg class="logo-svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <rect width="32" height="32" rx="8" fill="url(#logoGrad)"/>
-                <path d="M10 22V10l6 4-6 4zm7-8l5 4-5 4V14z" fill="#fff"/>
-                <defs><linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#58a6ff"/><stop offset="1" stop-color="#1f6feb"/></linearGradient></defs>
-            </svg>
+            <img src="images/logo.png" alt="NovEdu Logo" class="logo-img" width="40" height="40" style="object-fit: contain;">
             <span>NovEdu</span>
         </div>
         <div class="nav-controls">
@@ -54,23 +50,26 @@
                 </div>
 
                 <div class="cta-group">
-                    <a href="#" class="btn-primary" data-i18n="cta_primary">احجز Meeting لمدة 15 دقيقة</a>
-                    <a href="#" class="btn-secondary" data-i18n="cta_secondary">تواصل واتساب</a>
+                    <a href="https://calendly.com/mostafa-sallam34/30min" target="_blank" rel="noopener" class="btn-primary" data-i18n="cta_primary">احجز Meeting لمدة 15 دقيقة</a>
+                    <a href="#" class="btn-whatsapp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                        <span data-i18n="cta_secondary">تواصل واتساب</span>
+                    </a>
                 </div>
             </div>
             <p class="cta-hint text-center" data-i18n="cta_sub">ميتينج سريع لتحديد أكبر نقطتين نزيفًا عندك وإزاي نقفلهم بنظام واضح</p>
             
-            <div class="partners">
-                <p data-i18n="partners_title">شركات رسمية مع نقابة اطباء الشرقية و كلية طب الزقازيق و اكاديمية السادات و العديد من المؤسسات المعتمدة</p>
+            <div class="partners-highlight glass-card anim-item mt-5">
+                <h3 class="gradient-text mb-3" data-i18n="partners_title">شركات رسمية مع نقابة اطباء الشرقية و كلية طب الزقازيق و اكاديمية السادات و العديد من المؤسسات المعتمدة</h3>
                 <div class="partner-logos">
                     <div class="p-logo">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-4h6v4M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg>
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-4h6v4M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg>
                     </div>
                     <div class="p-logo">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.8 2.3A.3.3 0 105 2H4a2 2 0 00-2 2v5a6 6 0 006 6v0a6 6 0 006-6V4a2 2 0 00-2-2h-1a.2.2 0 10.3.3"/><path d="M8 15v1a6 6 0 006 6v0a6 6 0 006-6v-4"/><path d="M22 10l-4-2 4-2"/></svg>
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.8 2.3A.3.3 0 105 2H4a2 2 0 00-2 2v5a6 6 0 006 6v0a6 6 0 006-6V4a2 2 0 00-2-2h-1a.2.2 0 10.3.3"/><path d="M8 15v1a6 6 0 006 6v0a6 6 0 006-6v-4"/><path d="M22 10l-4-2 4-2"/></svg>
                     </div>
                     <div class="p-logo">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                     </div>
                 </div>
             </div>
@@ -161,7 +160,6 @@
                     <h2 data-i18n="auto_title">تنظيم المحتوى والجدولة <span class="badge-inline">Automation</span></h2>
                     <h3 class="highlight" data-i18n="auto_subtitle">ارفع مرة… والسيستم يشتغل لوحده.</h3>
                     <ul class="feature-list">
-                        <li data-i18n="auto_list_1">رفع فيديوهات وملفات PDF / Audio / Quiz</li>
                         <li data-i18n="auto_list_2">تقسيم الكورس بفولدرات ومستويات ومسارات</li>
                         <li data-i18n="auto_list_3">جدولة نزول المحاضرات تلقائيًا مع قواعد وصول واضحة</li>
                         <li data-i18n="auto_list_4">تجربة طالب منضبطة وثابتة بدل فوضى لينكات وجروبات</li>
@@ -188,7 +186,6 @@
                         <li data-i18n="sec_list_3">منع Screenshot وScreen Recording حسب الجهاز/السياسة</li>
                         <li data-i18n="sec_list_4">Watermark دائم داخل الفيديو باسم ورقم الطالب</li>
                         <li data-i18n="sec_list_5">Anti-Sharing وAnti-Download</li>
-                        <li data-i18n="sec_list_6">تحقق ببصمة/Face Recognition أثناء المشاهدة (للمستويات المتقدمة)</li>
                         <li data-i18n="sec_list_7">Offline Download داخل التطبيق فقط بطريقة مشفرة للطلبة المغتربين</li>
                     </ul>
                     <div class="alert-success glass-card mt-3">
@@ -259,7 +256,7 @@
 
                 <!-- PAYG -->
                 <div class="glass-card price-plan anim-item">
-                    <span class="plan-type" data-i18n="plan_3_type">ب) نموذج شفاف التكلفة (PAYG)</span>
+                    <span class="plan-type" data-i18n="plan_3_type">ب) نموذج شفاف التكلفة <span class="badge-inline badge-payg">PAYG</span></span>
                     <h3 data-i18n="plan_3_name">8 جنيه/طالب/شهر</h3>
                     <p class="traffic-addon" data-i18n="plan_3_addon">+ تكلفة ترافيك حسب المشاهدة.</p>
                     <ul class="plan-features border-t pt-2">
@@ -272,7 +269,7 @@
                 <h4 data-i18n="dec_title">قاعدة اختيار سريعة:</h4>
                 <ul>
                     <li data-i18n="dec_1">بتبيع بقوة ومش عايز فاتورة متغيرة ➔ <strong>Revenue Share</strong></li>
-                    <li data-i18n="dec_2">عندك عدد طلاب كبير واستهلاك متفاوت وعايز عدالة تكلفة ➔ <strong>PAYG</strong></li>
+                    <li data-i18n="dec_2">عندك عدد طلاب كبير واستهلاك متفاوت وعايز عدالة تكلفة ➔ <strong><span class="badge-inline badge-payg">PAYG</span></strong></li>
                 </ul>
             </div>
         </section>
@@ -308,10 +305,6 @@
                     <h4 data-i18n="faq_1_q">س: الستريمنج ثابت وقت الذروة؟</h4>
                     <p data-i18n="faq_1_a">ج: ثبات الذروة جزء من Core Premium Standard. الفرق بين الباقات هو الخدمات الاضافية مثل الدعم الفني 24 ساعة لمشاكل الطلبة و ايضا لخدمات التحصيل و التفعيل للطلاب</p>
                 </div>
-                <div class="faq-item glass-card anim-item">
-                    <h4 data-i18n="faq_2_q">س: لماذا لا نتعامل مع Google Play؟</h4>
-                    <p data-i18n="faq_2_a">ج: التوزيع عبر APK/Huawei/Xiaomi/TestFlight لأن اختيار الأمان أعلى من قيود المتاجر التقليدية.</p>
-                </div>
             </div>
         </section>
     </main>
@@ -322,12 +315,17 @@
             <h2 data-i18n="footer_title">اختصر الطريق</h2>
             <p class="mb-3" data-i18n="footer_desc">اختار نموذج دفع يناسبك، وخد Core Premium ثابت، وحدد مستوى التغطية التشغيلية اللي يقلل المخاطر عندك.</p>
             <div class="cta-wrap">
-                <a href="#" class="btn-primary large-btn" data-i18n="cta_final">احجز meeting لمدة 15 دقيقة لمعرفة الحلول</a>
+                <a href="https://calendly.com/mostafa-sallam34/30min" target="_blank" rel="noopener" class="btn-primary large-btn" data-i18n="cta_final">احجز meeting لمدة 15 دقيقة لمعرفة الحلول</a>
                 <p class="cta-hint mt-2" data-i18n="cta_final_sub">هدف المكالمة تحديد سلة المخاطر الحالية وإغلاق أكبر نقطتين نزيفًا بدون تعقيد</p>
             </div>
         </div>
         <p class="copyright">© 2026 NovEdu. All rights reserved.</p>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" class="floating-wa" aria-label="WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    </a>
 
     <script src="translations.js"></script>
     <script src="script.js"></script>

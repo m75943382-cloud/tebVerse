@@ -42,7 +42,6 @@ const translations = {
 
     auto_title: "تنظيم المحتوى والجدولة <span class='badge-inline'>Automation</span>",
     auto_subtitle: "ارفع مرة… والسيستم يشتغل لوحده.",
-    auto_list_1: "رفع فيديوهات وملفات PDF / Audio / Quiz",
     auto_list_2: "تقسيم الكورس بفولدرات ومستويات ومسارات",
     auto_list_3: "جدولة نزول المحاضرات تلقائيًا مع قواعد وصول واضحة",
     auto_list_4: "تجربة طالب منضبطة وثابتة بدل فوضى لينكات وجروبات",
@@ -54,7 +53,6 @@ const translations = {
     sec_list_3: "منع Screenshot وScreen Recording حسب الجهاز/السياسة",
     sec_list_4: "Watermark دائم داخل الفيديو باسم ورقم الطالب",
     sec_list_5: "Anti-Sharing وAnti-Download",
-    sec_list_6: "تحقق ببصمة / Face Recognition أثناء المشاهدة <span class='badge-inline'>متقدم</span>",
     sec_list_7: "Offline Download داخل التطبيق فقط بطريقة مشفرة للطلبة المغتربين",
     sec_result: "النتيجة:",
     sec_result_text: "تسريب أقل = ضغط أقل على التسعير = هامش أعلى وثقة أعلى في البيع.",
@@ -86,7 +84,7 @@ const translations = {
     plan_2_f4: "مناسب لو عندك شكاوى متكررة أو تفعيل ملخبط وعايز تشغيل منضبط .",
     addon_text: "* يوجد خدمة تحصيل من الطلبة و التفعيل مقابل 10 جنيه علي الطالب",
 
-    plan_3_type: "ب · نموذج شفاف التكلفة <span class='badge-inline'>PAYG</span>",
+    plan_3_type: "ب · نموذج شفاف التكلفة <span class='badge-inline badge-payg'>PAYG</span>",
     plan_3_name: "8 جنيه/طالب/شهر",
     plan_3_addon: "+ تكلفة ترافيك حسب المشاهدة.",
     plan_3_obj: "الهدف: شفافية في التكلفة.",
@@ -109,8 +107,6 @@ const translations = {
     faq_title: "الأسئلة الشائعة <span class='badge-inline'>Risk / ROI</span>",
     faq_1_q: "س: الستريمنج ثابت وقت الذروة؟",
     faq_1_a: "ج: ثبات الذروة جزء من Core Premium Standard. الفرق بين الباقات هو الخدمات الاضافية مثل الدعم الفني 24 ساعة لمشاكل الطلبة و ايضا لخدمات التحصيل و التفعيل للطلاب",
-    faq_2_q: "س: لماذا لا نتعامل مع Google Play؟",
-    faq_2_a: "ج: التوزيع عبر APK/Huawei/Xiaomi/TestFlight لأن اختيار الأمان أعلى من قيود المتاجر التقليدية.",
 
     footer_title: "اختصر الطريق",
     footer_desc: "اختار نموذج دفع يناسبك، وخد Core Premium ثابت، وحدد مستوى التغطية التشغيلية اللي يقلل المخاطر عندك.",
@@ -160,7 +156,6 @@ const translations = {
 
     auto_title: "Content Organization & Scheduling <span class='badge-inline'>Automation</span>",
     auto_subtitle: "Upload once... the system runs itself.",
-    auto_list_1: "Upload Videos and PDF / Audio / Quiz files",
     auto_list_2: "Divide courses into folders, levels, and tracks",
     auto_list_3: "Automatic content dripping with clear access rules",
     auto_list_4: "Stable and disciplined student experience instead of link/group chaos",
@@ -172,7 +167,6 @@ const translations = {
     sec_list_3: "Prevent Screenshot and Screen Recording based on device/policy",
     sec_list_4: "Permanent Watermark inside video with student name and number",
     sec_list_5: "Anti-Sharing and Anti-Download",
-    sec_list_6: "Verification via Fingerprint / Face Recognition during playback <span class='badge-inline'>Advanced</span>",
     sec_list_7: "Offline Download inside the app only, fully encrypted for expats/travelers",
     sec_result: "Result:",
     sec_result_text: "Fewer leaks = less pressure on pricing = higher margin & confidence in selling.",
@@ -204,7 +198,7 @@ const translations = {
     plan_2_f4: "Suitable if you have recurring complaints or messy activations and want disciplined operations.",
     addon_text: "* Student collection and activation service available for 10 EGP per student",
 
-    plan_3_type: "B · Cost Transparent Model <span class='badge-inline'>PAYG</span>",
+    plan_3_type: "B · Cost Transparent Model <span class='badge-inline badge-payg'>PAYG</span>",
     plan_3_name: "8 EGP/student/month",
     plan_3_addon: "+ Traffic cost based on streaming.",
     plan_3_obj: "Goal: Total cost transparency.",
@@ -227,8 +221,6 @@ const translations = {
     faq_title: "Frequently Asked Questions <span class='badge-inline'>Risk / ROI</span>",
     faq_1_q: "Q: Is streaming stable during peak hours?",
     faq_1_a: "A: Peak stability is part of Core Premium Standard. The difference between plans is additional services like 24h technical support for student issues, plus collection and activation services.",
-    faq_2_q: "Q: Why don't you distribute via Google Play?",
-    faq_2_a: "A: We distribute via APK/Huawei/Xiaomi/TestFlight because prioritizing security is higher than traditional store restrictions.",
 
     footer_title: "Shorten the Path",
     footer_desc: "Choose your payment model, get the fixed Core Premium, and set your operational coverage level to reduce your risks.",
