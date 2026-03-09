@@ -433,21 +433,22 @@ main {
 /* Logo repeating pattern background for specific cards */
 .logo-pattern {
   position: relative;
+  overflow: hidden;
+  border-radius: 16px;
 }
 .logo-pattern::before {
   content: "";
   position: absolute;
-  inset: -50px;
+  inset: 0;
   background-image: url('images/logo.png');
   background-size: 40px 40px;
   background-repeat: repeat;
   opacity: 0.04; 
-  transform: rotate(-15deg);
+  transform: rotate(-15deg) scale(1.5);
   z-index: 0;
   pointer-events: none;
-  clip-path: inset(50px round 18px);
 }
-.logo-pattern > *:not(.ribbon) {
+.logo-pattern > * {
   position: relative;
   z-index: 1;
 }
@@ -928,7 +929,7 @@ html[lang="ar"] .plan-features { text-align: right; }
 }
 .price-plan .ribbon {
   position: absolute;
-  top: -12px;
+  top: 8px;
   left: 50%;
   transform: translateX(-50%);
   background: linear-gradient(135deg, var(--primary), var(--secondary));
