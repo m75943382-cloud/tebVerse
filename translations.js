@@ -55,6 +55,26 @@ const translations = {
     sec_list_5: "Anti-Sharing وAnti-Download",
     sec_list_7: "Offline Download داخل التطبيق فقط بطريقة مشفرة للطلبة المغتربين",
     sec_result: "النتيجة:",
+
+    // Mockup UI - Course Modules
+    mockup_course_modules: "Course Modules",
+    mockup_mod1: "Module 1 — المقدمة",
+    mockup_mod1_done: "✓ 3/3",
+    mockup_lesson_1_1: "1.1 مقدمة عامة",
+    mockup_lesson_1_2: "1.2 أساسيات",
+    mockup_quiz: "Quiz — اختبار قصير",
+    mockup_mod2: "Module 2 — التطبيق العملي",
+    mockup_mod3: "Module 3 — 🔒 يفتح 15 مارس",
+
+    // Mockup UI - Secure Player
+    mockup_secure_player: "Secure Player",
+    mockup_sec_status: "🟢 Active",
+    mockup_watermark_name: "أحمد محمد — #4829",
+    mockup_screenshot_blocked: "Screenshot Blocked",
+    mockup_watermark_on: "Watermark ON",
+    mockup_anti_share: "Anti-Share",
+    mockup_device_lock: "Device Lock",
+    mockup_device_info: "جهاز مربوط: iPhone 15 Pro",
     sec_result_text: "تسريب أقل = ضغط أقل على التسعير = هامش أعلى وثقة أعلى في البيع.",
 
     gov_title: "التحكم في الطلبة + الحوكمة",
@@ -170,6 +190,26 @@ const translations = {
     sec_list_7: "Offline Download inside the app only, fully encrypted for expats/travelers",
     sec_result: "Result:",
     sec_result_text: "Fewer leaks = less pressure on pricing = higher margin & confidence in selling.",
+
+    // Mockup UI - Course Modules
+    mockup_course_modules: "Course Modules",
+    mockup_mod1: "Module 1 — Introduction",
+    mockup_mod1_done: "✓ 3/3",
+    mockup_lesson_1_1: "1.1 General Intro",
+    mockup_lesson_1_2: "1.2 Fundamentals",
+    mockup_quiz: "Quiz — Short Test",
+    mockup_mod2: "Module 2 — Practical Application",
+    mockup_mod3: "Module 3 — 🔒 Opens Mar 15",
+
+    // Mockup UI - Secure Player
+    mockup_secure_player: "Secure Player",
+    mockup_sec_status: "🟢 Active",
+    mockup_watermark_name: "Ahmed Mohamed — #4829",
+    mockup_screenshot_blocked: "Screenshot Blocked",
+    mockup_watermark_on: "Watermark ON",
+    mockup_anti_share: "Anti-Share",
+    mockup_device_lock: "Device Lock",
+    mockup_device_info: "Linked Device: iPhone 15 Pro",
 
     gov_title: "Student Control + Governance",
     gov_subtitle: "You are the decision maker. Not the platform.",
