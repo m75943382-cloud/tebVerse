@@ -598,6 +598,83 @@ html[lang="en"] .check-list li::before {
   line-height: 1.7;
 }
 
+/* ————— Automation Feature Cards ————— */
+.auto-features-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auto-feature-card {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.2rem 1.4rem;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(45, 91, 199, 0.08);
+  border-radius: 14px;
+  transition: all 0.4s var(--ease-out-expo);
+  position: relative;
+  overflow: hidden;
+}
+
+.auto-feature-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(45, 91, 199, 0.03) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.auto-feature-card:hover::before {
+  opacity: 1;
+}
+
+.auto-feature-card:hover {
+  border-color: rgba(45, 91, 199, 0.2);
+  box-shadow: 0 8px 24px rgba(45, 91, 199, 0.06);
+  transform: translateX(-4px);
+}
+
+html[lang="en"] .auto-feature-card:hover {
+  transform: translateX(4px);
+}
+
+.auto-feature-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(45, 91, 199, 0.08), rgba(155, 61, 145, 0.06));
+  color: var(--primary);
+  border: 1px solid rgba(45, 91, 199, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.auto-feature-card:hover .auto-feature-icon {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(45, 91, 199, 0.12);
+}
+
+.auto-feature-card h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.6;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
 /* ————— Split Layouts ————— */
 .split-layout {
   display: flex;
@@ -946,9 +1023,133 @@ html[lang="ar"] .plan-features { text-align: right; }
 html[lang="ar"] .addon { text-align: right; }
 .traffic-addon { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;}
 
-.decision-box h4 {
+/* Decision Section Improved UI */
+.decision-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.decision-heading {
+  font-size: 1.15rem;
+  font-weight: 800;
   color: var(--primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.decision-heading::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 18px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+html[lang="en"] .decision-heading {
+  text-align: left;
+}
+
+.decision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.decision-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+
+.decision-icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.rev-share .decision-icon {
+  background: rgba(45, 91, 199, 0.06);
+  color: var(--primary);
+  border: 1px solid rgba(45, 91, 199, 0.12);
+}
+
+.payg .decision-icon {
+  background: rgba(30, 138, 60, 0.06);
+  color: var(--success);
+  border: 1px solid rgba(30, 138, 60, 0.12);
+}
+
+.decision-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.decision-badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.25rem 0.6rem;
+  background: rgba(45, 91, 199, 0.1);
+  color: var(--primary);
+  border: 1px solid rgba(45, 91, 199, 0.2);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.payg .decision-badge {
+  background: rgba(30, 138, 60, 0.1);
+  color: var(--success);
+  border: 1px solid rgba(30, 138, 60, 0.2);
+}
+
+.decision-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 600;
+}
+
+.decision-arrow {
+  display: none;
+}
+
+.decision-card.rev-share {
+  border-color: rgba(45, 91, 199, 0.12);
+}
+
+.decision-card.payg {
+  border-color: rgba(30, 138, 60, 0.12);
+}
+
+@media (max-width: 600px) {
+  .decision-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ————— Target Audience ————— */
